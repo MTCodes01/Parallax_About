@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: whitesmoke;
+    max-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items:  center;
+    z-index: 100;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin-left: 100px;
+    font-weight: 600;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background: #359381;
+    color: white;
+}
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text {
+    position: absolute;
+    font-size: 3cm;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.about {
+    position: absolute;
+    top: 790px;
+    background: #003329;
+    padding: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 15;
+    color: #fff;
+    font-weight: 300;
+}
+
+.link {
+    position: relative;
+    margin-top: 25%;
+    left: 0;
+    width: 100%;
+    background: #003329;
+    padding-bottom: 5%;
+    border-radius: 10px;
+    text-align-last: center;
+}
+
+.about h1 {
+    font-size: 2cm;
+    color: #fff;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+    justify-items: flex-start;
+    align-content: center;
+
+}
+.about p {
+    font-size: 1cm;
+    color: #fff;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, .3);
+}
+
+.link-bar a {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #359381;
+    margin-right: 10px;
+    border-radius: 40%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.link-bar a:hover {
+    background: #267c6b;
+    transform: scale(1.2);
+}
+
+.link-bar img {
+    width: 50%;
+    height: 50%;
+}
